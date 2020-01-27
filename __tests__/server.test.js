@@ -4,7 +4,7 @@ const {server} = require('../src/app');
 const supergoose = require('@code-fellows/supergoose');
 const mockRequest = supergoose(server);
 
-describe('Product API', ()=>{
+xdescribe('Product API', ()=>{
   it('can post a new product', ()=>{
     let obj = {name: 'david', amount: 1, category_id: 'people'};
     return mockRequest.post('/api/v1/products')
@@ -73,7 +73,7 @@ describe('Product API', ()=>{
 
 
 
-describe('Catgories API', () => {
+xdescribe('Catgories API', () => {
 
   it('can post a new category', () => {
     const cat = {    
