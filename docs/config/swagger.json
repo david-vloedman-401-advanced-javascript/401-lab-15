@@ -1,0 +1,125 @@
+{
+  "swagger":2.0,
+  "info": {
+    "title": "Core API",
+    "description": "Products and Categories",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://lab10-api.herokuapp.com/api/v1"
+    }
+  ],
+  "paths": {
+    "/categories": {
+      "get": {
+        "description": "Get all categories",
+        "responses": {
+          "200": {
+            "description": "Returned a list of categories",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAll"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Create a new category",
+        "responses": {
+          "200": {
+            "description": "Category created successfully"
+          }
+        }
+      }
+    },
+    "/categories/{id}": {
+      "get": {
+        "description": "Get a specific item",
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved item"
+          }
+        }
+      },
+      "put": {
+        "description": "Update category",
+        "responses": {
+          "200": {
+            "description": "Successfully updated category"
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete category",
+        "responses": {
+          "200": {
+            "description": "Successfully deleted category"
+          }
+        }
+      }
+    },
+    "/products": {
+      "get": {
+        "description": "Get all products",
+        "responses": {
+          "200": {
+            "description": "Returned a list of products",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAll"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Create a new product",
+        "responses": {
+          "200": {
+            "description": "product created successfully"
+          }
+        }
+      }
+    },
+    "/products/{id}": {
+      "get": {
+        "description": "Get a specific item",
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved item"
+          }
+        }
+      },
+      "put": {
+        "description": "Update product",
+        "responses": {
+          "200": {
+            "description": "Successfully updated product"
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete category",
+        "responses": {
+          "200": {
+            "description": "Successfully deleted product"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "getAll": {
+        "type": "object",
+        "example": ["{}", "{}"]
+      }
+    }
+  }
+}
