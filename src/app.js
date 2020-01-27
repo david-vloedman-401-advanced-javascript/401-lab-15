@@ -8,6 +8,7 @@ const morgan = require('morgan');
 
 // Router
 const routes = require('./routes/routes');
+const accessRoutes = require('./routes/accessRoutes');
 
 
 // Prepare the express app

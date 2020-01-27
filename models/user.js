@@ -34,9 +34,6 @@ userSchema.virtual('userRoles', {
   justOne: true,
 });
 
-/**
- * @description Hashes password before saving to DB
- */
 userSchema.pre('save', async function(next) {
   if (this.isModified('password')) {
     this.password = await bcrypt.hash(this.password, 10);
@@ -112,8 +109,10 @@ userSchema.methods.comparePassword = function(password) {
  * @return promise
  */
 userSchema.statics.authenticateToken = function(token) {
+  console.log('here to auth');
   try {
     if (persistTokens.has(token)) {
+      
       return Promise.reject('Token has been used');
     }
 
@@ -125,7 +124,7 @@ userSchema.statics.authenticateToken = function(token) {
 
     return this.find(query);
   } catch (error) {
-    return Promise.reject();
+    return Promise.reject(error);
   }
 };
 

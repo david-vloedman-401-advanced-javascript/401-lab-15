@@ -9,9 +9,9 @@ module.exports = (req, res, next) => {
     next('Invalid Login');
     return;
   }
-
+  console.log('made it here');
   let token = req.headers.authorization.split(' ').pop(); 
-
+  
   users
     .authenticateToken(token)
     .then(validUser => {
