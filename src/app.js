@@ -8,7 +8,7 @@ const morgan = require('morgan');
 
 // Router
 const routes = require('./routes/routes');
-const accessRoutes = require('./routes/accessRoutes');
+const userRoutes = require('./routes/user-routes');
 
 
 // Prepare the express app
@@ -20,7 +20,10 @@ app.use(morgan('dev'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(userRoutes);
 app.use(routes);
+
+
 
 // Swagger
 const swaggerUi = require('swagger-ui-express');

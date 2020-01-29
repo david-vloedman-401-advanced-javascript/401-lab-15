@@ -2,7 +2,7 @@
 
 
 const User = require('../../models/user');
-const users = new User();
+
 
 module.exports = (req, res, next) => {
   if (!req.headers.authorization) {
@@ -12,12 +12,14 @@ module.exports = (req, res, next) => {
   console.log('made it here');
   let token = req.headers.authorization.split(' ').pop(); 
   
-  users
-    .authenticateToken(token)
+  User.authenticateToken(token)  
     .then(validUser => {
       req.user = validUser;      
       next();
     })
-    .catch(err => next('Invalid Login'));
+    .catch(err => {
+      console.log(err);
+      next('Invalid Login');
+    });
   
 };

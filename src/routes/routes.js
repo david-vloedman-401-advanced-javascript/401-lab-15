@@ -37,27 +37,6 @@ function getModel(req,res, next){
   }
 }
 
-router.post('/api/v1/signup', (req, res, next) => {
-  console.log(req.body);
-  let user = new User(req.body);
-
-  user
-    .save()
-    .then(user => {
-      req.token = user.generateToken();
-      req.user = user;
-      res.set('token', req.token);
-      res.cookie('auth', req.token);
-      res.send(req.token);
-    })
-    .catch(next);
-});
-
-router.post('/api/v1/signin', auth, (req, res, next) => {
-  res.cookie('auth', req.token);
-  res.send(req.token);
-});
-
 router.param('model', getModel);
 
 router.get('/api/v1/:model', bearerAuth, handleGetAll);

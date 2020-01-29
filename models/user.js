@@ -109,8 +109,10 @@ userSchema.methods.comparePassword = function(password) {
  * @return promise
  */
 userSchema.statics.authenticateToken = function(token) {
-  console.log('here to auth');
+  
+  
   try {
+    console.log('here to auth');
     if (persistTokens.has(token)) {
       
       return Promise.reject('Token has been used');
