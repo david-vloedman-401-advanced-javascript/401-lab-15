@@ -144,7 +144,7 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="-__tests___supergoose.js.html">__tests__/supergoose.js</a>, <a href="-__tests___supergoose.js.html#line8">line 8</a>
+        <a href="-__tests___supergoose.js.html">__tests__/supergoose.js</a>, <a href="-__tests___supergoose.js.html#line7">line 7</a>
     </li></ul></dd>
     
 
@@ -165,6 +165,420 @@ testing a Mongoose API
 
     
         <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="exchangeCodeForToken"><span class="type-signature">(async) </span>exchangeCodeForToken<span class="signature">(code)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_middleware_github.js.html">src/middleware/github.js</a>, <a href="src_middleware_github.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    accessToken
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getRemoteUserInfo"><span class="type-signature">(async) </span>getRemoteUserInfo<span class="signature">(token)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_middleware_github.js.html">src/middleware/github.js</a>, <a href="src_middleware_github.js.html#line69">line 69</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    user
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getUser"><span class="type-signature">(async) </span>getUser<span class="signature">(remoteUser)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>remoteUser</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_middleware_github.js.html">src/middleware/github.js</a>, <a href="src_middleware_github.js.html#line86">line 86</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    [user, token]
+</div>
+
+
+
+    
+
+
+
+
 
         
             
@@ -315,7 +729,7 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_routes_routes.js.html">src/routes/routes.js</a>, <a href="src_routes_routes.js.html#line108">line 108</a>
+        <a href="src_routes_routes.js.html">src/routes/routes.js</a>, <a href="src_routes_routes.js.html#line117">line 117</a>
     </li></ul></dd>
     
 
@@ -494,7 +908,7 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_routes_routes.js.html">src/routes/routes.js</a>, <a href="src_routes_routes.js.html#line50">line 50</a>
+        <a href="src_routes_routes.js.html">src/routes/routes.js</a>, <a href="src_routes_routes.js.html#line59">line 59</a>
     </li></ul></dd>
     
 
@@ -673,7 +1087,7 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_routes_routes.js.html">src/routes/routes.js</a>, <a href="src_routes_routes.js.html#line69">line 69</a>
+        <a href="src_routes_routes.js.html">src/routes/routes.js</a>, <a href="src_routes_routes.js.html#line78">line 78</a>
     </li></ul></dd>
     
 
@@ -852,7 +1266,7 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_routes_routes.js.html">src/routes/routes.js</a>, <a href="src_routes_routes.js.html#line82">line 82</a>
+        <a href="src_routes_routes.js.html">src/routes/routes.js</a>, <a href="src_routes_routes.js.html#line91">line 91</a>
     </li></ul></dd>
     
 
@@ -1031,7 +1445,7 @@ testing a Mongoose API
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_routes_routes.js.html">src/routes/routes.js</a>, <a href="src_routes_routes.js.html#line95">line 95</a>
+        <a href="src_routes_routes.js.html">src/routes/routes.js</a>, <a href="src_routes_routes.js.html#line104">line 104</a>
     </li></ul></dd>
     
 
@@ -1146,6 +1560,134 @@ testing a Mongoose API
 
 
         
+            
+
+    
+
+    
+    <h4 class="name" id="join"><span class="type-signature"></span>join<span class="signature">(next)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="models_user.js.html">models/user.js</a>, <a href="models_user.js.html#line51">line 51</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     
 
     
@@ -1161,13 +1703,13 @@ testing a Mongoose API
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Categories.html">Categories</a></li><li><a href="Model.html">Model</a></li><li><a href="Product.html">Product</a></li></ul><h3>Global</h3><ul><li><a href="global.html#handleDelete">handleDelete</a></li><li><a href="global.html#handleGetAll">handleGetAll</a></li><li><a href="global.html#handleGetOne">handleGetOne</a></li><li><a href="global.html#handlePost">handlePost</a></li><li><a href="global.html#handlePut">handlePut</a></li><li><a href="global.html#join">join</a></li><li><a href="global.html#mongoose">mongoose</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Categories.html">Categories</a></li><li><a href="Model.html">Model</a></li><li><a href="Product.html">Product</a></li></ul><h3>Global</h3><ul><li><a href="global.html#exchangeCodeForToken">exchangeCodeForToken</a></li><li><a href="global.html#getRemoteUserInfo">getRemoteUserInfo</a></li><li><a href="global.html#getUser">getUser</a></li><li><a href="global.html#handleDelete">handleDelete</a></li><li><a href="global.html#handleGetAll">handleGetAll</a></li><li><a href="global.html#handleGetOne">handleGetOne</a></li><li><a href="global.html#handlePost">handlePost</a></li><li><a href="global.html#handlePut">handlePut</a></li><li><a href="global.html#join">join</a></li><li><a href="global.html#mongoose">mongoose</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Sun Jan 19 2020 11:00:01 GMT-0800 (Pacific Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Wed Jan 29 2020 09:57:21 GMT-0800 (Pacific Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

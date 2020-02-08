@@ -16,6 +16,7 @@ const notFound = require('../middleware/404.js');
 const auth = require('../middleware/authMiddleware');
 const acl = require('../middleware/aclMiddleware');
 const bearerAuth = require('../middleware/bearerAuthMiddleware');
+const User = require('../../models/user');
 
 
 function getModel(req,res, next){
@@ -43,6 +44,8 @@ router.post('/api/v1/:model', bearerAuth, acl('create'), handlePost);
 router.get('/api/v1/:model/:id', bearerAuth, handleGetOne);
 router.put('/api/v1/:model/:id', bearerAuth, acl('update'), handlePut);
 router.delete('/api/v1/:model/:id', bearerAuth, acl('delete'), handleDelete);
+
+
 
 
 router.use(notFound);
