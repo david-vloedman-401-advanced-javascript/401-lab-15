@@ -13,7 +13,7 @@
 #### Documentation
 
 [Docs Index](./docs/index.html)
-
+[Swagger](./docs/config/swagger.json)
 
 ### Setup
 
