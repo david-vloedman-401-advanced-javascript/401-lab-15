@@ -19,7 +19,7 @@
   "dependencies": {
     "@code-fellows/supergoose": "^1.0.1",
     "@david-vloedman/mymongomodel": "^1.0.0",
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
